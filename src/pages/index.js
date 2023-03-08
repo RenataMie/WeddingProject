@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Cormorant } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import {useForm} from 'react-hook-form'
+import ConfirmPresenceBtn from '../components/confirmPresence'
 
 const inter = Cormorant({ subsets: ['latin'] })
 
@@ -42,6 +44,8 @@ export default function Home() {
         <div className={styles.center}>
           <h2>Mie & William</h2>
         </div>
+
+        <ConfirmPresenceBtn/>
 
         <div className={styles.grid}>
           <a
