@@ -6,5 +6,6 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     color: #FFFFFF;
+    overflow-x: hidden;
   }
 `

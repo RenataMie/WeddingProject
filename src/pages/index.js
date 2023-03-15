@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from './components/Header/Header';
 import * as S from './home/styled';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon1.ico" />
       </Head>
       <S.MainContainer>
+        <Header />
         <S.TitleContainer>
           <S.Title>Mie & William</S.Title>
         </S.TitleContainer>

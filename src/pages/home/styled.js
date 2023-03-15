@@ -3,16 +3,13 @@ import photo from 'public/pic6.png';
 
 export const MainContainer = styled.div`
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 70vh;
+  flex-direction: column;
+  min-height: 90vh;
   background-image: url(${photo.src});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.85;
+  opacity: 0.8;
 
   @media only screen and (max-width: 700px) {
     padding: 0;
@@ -22,11 +19,9 @@ export const MainContainer = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  position: relative;
-  right: 250px;
+  position: absolute;
+  top: 250px;
+  left: 300px;
 
   @media only screen and (max-width: 700px) {
     right: 100px;
@@ -38,5 +33,5 @@ export const TitleContainer = styled.div`
 export const Title = styled.h1`
   font-weight: normal;
   color: white;
-  font-size: 3rem;
+  font-size: 5.5rem;
 `;
