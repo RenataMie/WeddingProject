@@ -1,8 +1,14 @@
 import Head from 'next/head'
+import Countdown from './components/Countdown/Countdown';
 import Header from './components/Header/Header';
+import Infos from './components/Infos/Infos';
+import useIsDesktop from '@/hooks/useIsDesktop';
 import * as S from './home/styled';
+import WelcomeMessage from './components/WelcomeMessage/WelcomeMessage';
 
 export default function Home() {
+  const isDesktop = useIsDesktop();
+
   return (
     <>
       <Head>
@@ -15,8 +21,11 @@ export default function Home() {
         <Header />
         <S.TitleContainer>
           <S.Title>Mie & William</S.Title>
+          {/* {isDesktop && <Countdown />} */}
         </S.TitleContainer>
       </S.MainContainer>
+      <WelcomeMessage />
+      <Infos />
     </>
   )
 }

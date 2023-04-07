@@ -6,27 +6,28 @@ export const MainContainer = styled.div`
   flex-direction: column;
   min-height: 90vh;
   background-image: url(${photo.src});
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9;
 
   @media only screen and (max-width: 700px) {
     padding: 0;
-    background-size: cover;
-    min-height: 40vh;
+    background-attachment: scroll;
+    min-height: 45vh;
   }
 `;
 
 export const TitleContainer = styled.div`
   position: absolute;
-  top: 250px;
+  top: 450px;
   left: 300px;
 
   @media only screen and (max-width: 700px) {
-    right: 100px;
-    bottom: 50px;
-    font-size: 1rem;
+    position: absolute;
+    left: 40px;
+    top: 150px;
   }
 `;
 
@@ -34,4 +35,8 @@ export const Title = styled.h1`
   font-weight: normal;
   color: white;
   font-size: 5.5rem;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.5rem;
+  }
 `;
