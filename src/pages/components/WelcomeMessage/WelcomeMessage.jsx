@@ -11,7 +11,8 @@ function WelcomeMessage() {
 
       Aqui vocês encontrarão também dicas de como chegar, hospedagem, salão de beleza, restaurantes, etc.<br/><br/>
 
-      Ah, é importante também confirmar sua presença. Para isto contamos com sua ajuda clicando no botão <strong>"Confirmar Presença"</strong> e preenchendo os dados necessários. <br/><br/>
+      Ah, é importante também confirmar sua presença. <br/>
+      Para isto contamos com sua ajuda clicando no botão <strong>"Confirmar Presença"</strong> e preenchendo os dados necessários. <br/><br/>
 
       Aguardamos vocês no nosso grande dia!
      </div>

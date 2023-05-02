@@ -1,13 +1,18 @@
+import Header from "../components/Header/Header";
+import * as S from './styled';
 
-
-function Dicas() {
+export default function Dicas() {
 
   return (
-   
-     <div style={{color:'green'}}>
-     Página em construção
-     </div>
+    <S.MainContainer>
+      <Header />
+      <S.ButtonsContainer>
+        <S.Button>Local da Festa</S.Button>
+        <S.Button>Hospedagem</S.Button>
+        <S.Button>Salão de beleza</S.Button>
+        <S.Button>Lazer</S.Button>
+        <S.Button>Restaurantes</S.Button>
+      </S.ButtonsContainer>
+    </S.MainContainer>
   );
 }
-
-export default Dicas;

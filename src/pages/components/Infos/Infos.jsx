@@ -6,16 +6,15 @@ function Infos() {
     <S.Container>
      <S.Info>
       <h2>Onde</h2>
-      <h2>Cerimônia + Recepção</h2>
       <p>Estância das Orquídeas</p>
-      <p>Campo Grande</p>
+      <p><b>Campo Grande</b></p>
       <p>Mato Grosso do Sul</p>
      </S.Info>
 
      <S.Info>
       <h2>Quando</h2>
-      <p>sábado</p>
-      <p>09 de Stembro de 2023</p>
+      <p><b>sábado</b></p>
+      <p><b>09</b> de <b>Setembro</b> de <b>2023</b></p>
      </S.Info>
     </S.Container>
   );

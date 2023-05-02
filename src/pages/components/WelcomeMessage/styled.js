@@ -5,11 +5,9 @@ export const Container = styled.div`
   color: white;
   padding: 5rem;
   margin: 0 auto;
-  /* display: flex; */
   align-content: center;
   justify-content: space-around;
   align-items: center;
-  z-index: 5;
   text-align: center;
   font-size: 1.3rem;
 

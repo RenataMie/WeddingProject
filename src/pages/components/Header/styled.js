@@ -1,18 +1,20 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const Container = styled.nav`
   display: flex;
-  opacity: 0.85;
+  opacity:  ${({ $isScrolled }) => ($isScrolled !== 0 ? '1' : '0.85')};
   background: white;
   color: #454B1B;
   width: 100vw;
   justify-content: flex-end;
   padding: 1.5rem 2rem;
   position: fixed;
+  z-index: 2;
 
   @media only screen and (max-width: 700px) {
     padding: 1rem;
-    opacity: 0.8;
+    flex-direction: column;
+    background: transparent;
   }
 `;
 
@@ -23,8 +25,13 @@ export const MenuWrapper = styled.div`
   padding-right: 100px;
 
   @media only screen and (max-width: 700px) {
-    padding-right: 35px;
+    padding: 15px 35px 15px;
+    margin-left: -20px;
     gap: 20px;
+    justify-content: flex-end;
+    background: white;
+    position: relative;
+    bottom: 20px;
   }
 `;
 
@@ -60,7 +67,6 @@ export const Link = styled.a`
 
 export const PresenceButton = styled.button`
   font-size: 1rem;
-  /* font-weight: bolder; */
   background-color: #454B1B;
   color: white;
   border-radius: 3px;
@@ -85,4 +91,11 @@ export const BurguerButton = styled.button`
   border: 0;
   background: none;
   color: white;
+`
+
+export const MenuDrawerContainer = styled.div`
+  position: relative;
+  bottom: 10px;
+  right: ${({ $isOpen }) => ($isOpen ? '0' : '-300px')};
+  transition: all 1.5s ease-in-out;
 `
